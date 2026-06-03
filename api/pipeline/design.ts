@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { generateFallbackDesign } from '../../../src/fallbackPipeline';
+import { generateFallbackDesign } from '../../src/fallbackPipeline';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
