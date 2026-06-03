@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { generateFallbackIntent } from '../../src/fallbackPipeline';
+import { generateFallbackIntent } from '../_lib/fallbackPipeline.js';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
