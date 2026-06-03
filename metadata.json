@@ -1,0 +1,6 @@
+{
+  "name": "AI App Generator System Backend",
+  "description": "Full-stack modular backend simulator and FastAPI starter code library for a 6-stage AI App Generator System, including Intent Extraction, System Design, Schema Generation, Validation, Repair, and Runtime Simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Color Palette (Deep Navy + Electric Cyan + Royal Violet) */
+  --color-navy-950: #020512;
+  --color-navy-900: #060b24;
+  --color-navy-850: #0a1133;
+  --color-navy-800: #0f1847;
+  --color-navy-700: #192666;
+  --color-navy-600: #25378c;
+  --color-navy-500: #3c52bd;
+  
+  --color-accent-cyan: #00f0ff;
+  --color-accent-cyan-dark: #00a8cc;
+  --color-accent-violet: #8b5cf6;
+  --color-accent-violet-dark: #6366f1;
+}
+
+@utility glass-panel {
+  background: rgba(6, 11, 36, 0.65);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(25, 38, 102, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+@utility glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  &:hover {
+    background: rgba(10, 17, 51, 0.8);
+    border-color: rgba(0, 240, 255, 0.35);
+    box-shadow: 0 12px 40px 0 rgba(0, 240, 255, 0.05);
+  }
+}
+
+@utility glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+}
+
+@utility glow-violet {
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.15);
+}
+
+@utility text-gradient-cv {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 100%);
+}
+
+@utility bg-gradient-cv {
+  background-image: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 100%);
+}
+
+@utility border-gradient-cv {
+  border-image: linear-gradient(135deg, #00f0ff 0%, #8b5cf6 100%) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(2, 5, 18, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(25, 38, 102, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.35);
+}
+
+/* Animations helper */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
